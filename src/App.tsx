@@ -95,8 +95,7 @@ setFlippedPages([]);
        }}>
 
          <div className="pad">
-            <div className="book">
-                {imgs.map((img, index) => (
+         {imgs.map((img, index) => (
                     <div
                         key={index}
                         className={`page ${flippedPages.includes(index) ? "flipped" : ""}`}
@@ -106,7 +105,6 @@ setFlippedPages([]);
            
                     </div>
                 ))}
-            </div>
           
         </div>
           {/** BUTTONS */}
