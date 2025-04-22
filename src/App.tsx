@@ -23,7 +23,8 @@ import img19 from "./assets/19.webp";
 import img20 from "./assets/20.webp";
 import img21 from "./assets/21.webp";
 import img22 from "./assets/22.webp";   
-import logo from "./assets/logo.png";
+import refreshLogo from "./assets/refresh-svgrepo-com.svg";
+import toggleLogo from "./assets/next-svgrepo-com.svg";
 
 
 
@@ -90,12 +91,8 @@ setFlippedPages([]);
         overflow: "hidden",
         backgroundColor: "#eeeeee",
         margin: "0",
-        gap: "40px",
+        overflowY: "auto",
        }}>
-
-        {/** LOGO */}
-        <img src={logo} alt="logo" width={40} />
-
 
          <div className="pad">
             <div className="book">
@@ -105,7 +102,7 @@ setFlippedPages([]);
                         className={`page ${flippedPages.includes(index) ? "flipped" : ""}`}
                         style={{ zIndex: imgs.length - index }} // Ensure pages stack properly
                     >
-                        <div className="page-content"><img src={img} alt="image"/></div>
+                        <div className="page-content"><img src={img} alt="image" height={500}/></div>
            
                     </div>
                 ))}
@@ -115,9 +112,9 @@ setFlippedPages([]);
           {/** BUTTONS */}
 
           <div className="controls">
-              <button className="prev-button" onClick={handlePrevious} disabled={flippedPages.length === 0}>Previous</button>
-              <button className='reset-button' onClick={handleReset} disabled={flippedPages.length === 0}>Reset</button>
-              <button className='next-button' onClick={handleNext} disabled={flippedPages.length === ( imgs.length - 1 )}>Next</button>
+              <button className="prev-button" onClick={handlePrevious} disabled={flippedPages.length === 0}> <img  src={toggleLogo} alt='logo' width={30} /></button>
+              <button className='reset-button' onClick={handleReset} disabled={flippedPages.length === 0}> <img  src={refreshLogo} alt='logo' width={30} /></button>
+              <button className='next-button' onClick={handleNext} disabled={flippedPages.length === ( imgs.length - 1 )}> <img  src={toggleLogo} alt='logo' width={30} /></button>
             </div>
        </div>
     );
