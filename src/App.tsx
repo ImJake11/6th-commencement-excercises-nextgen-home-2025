@@ -81,7 +81,7 @@ function App() {
           return prev;
         }
       });
-    }, 250);
+    }, 120);
 
     return () => clearInterval(timer);
   }, [setFlippedPages]);

@@ -1,16 +1,15 @@
 .pad {
-    width: 80vw;
+    width: 94vw;
     aspect-ratio: 3/4.17;
     background-color: transparent;
     perspective: 1800px; /* Enables 3D effect */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .page {
-    width: 80vw;
+    width: 94vw;
     display: flex;
     aspect-ratio: 3/4.17;
     justify-content: center;
@@ -22,9 +21,9 @@
     font-size: 20px;
     color: black; 
     backface-visibility: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;background-color: palegoldenrod;
-    box-shadow: -2px -2px 10px white, 2px 2px 10px black;
+    box-shadow: -2px -2px 10px white, 2px 2px 10px rgb(99, 99, 99);
 
 }
 
@@ -34,19 +33,17 @@
 
 
 .page img{
-
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-
 }
 .controls {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 button {
@@ -59,8 +56,9 @@ button {
     cursor: pointer;
     transition: background-color 0.4s ease;
     border-radius: 10px;
-    box-shadow: -2px -2px 5px white, 2px 2px 5px black;
+    box-shadow: -4px -4px 5px white, 4px 4px 5px rgb(99, 99, 99);
 }
+
 
 button:hover {
     background-color: #0056b3;
