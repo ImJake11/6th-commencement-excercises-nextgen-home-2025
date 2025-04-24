@@ -1,6 +1,6 @@
 .pad {
     width: 80vw;
-    height: 62.5vh;
+    aspect-ratio: 3/4.17;
     background-color: transparent;
     perspective: 1800px; /* Enables 3D effect */
     display: flex;
@@ -11,7 +11,6 @@
 
 .page {
     width: 80vw;
-  
     display: flex;
     aspect-ratio: 3/4.17;
     justify-content: center;
