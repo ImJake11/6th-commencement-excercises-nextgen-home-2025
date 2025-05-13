@@ -23,7 +23,7 @@ import img19 from "./assets/19.webp";
 import img20 from "./assets/20.webp";
 import img21 from "./assets/21.webp";
 import img22 from "./assets/22.webp";
-import img23 from "./assets/23.webp";
+
 import refreshLogo from "./assets/refresh-svgrepo-com.svg";
 import toggleLogo from "./assets/next-svgrepo-com.svg";
 
@@ -52,7 +52,6 @@ function App() {
     img20,
     img21,
     img22,
-    img23,
   ];
   const [flippedPages, setFlippedPages] = useState<number[]>([]);
 
@@ -150,10 +149,11 @@ function App() {
           height: "50px",
           display: "flex",
           justifyContent: "center",
-          alignItems: "end", 
+          alignItems: "end",
           fontSize: "18px",
           fontWeight: "400",
-          opacity: ".5"
+          opacity: ".3",
+          color: "blue",
         }}
       >
         {flippedPages.length + 1} / {imgs.length}
